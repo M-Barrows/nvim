@@ -1,8 +1,8 @@
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-
-vim.g.background = "light"
+vim.opt.expandtab = true
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 1
+vim.opt.shiftwidth = 2
+vim.g.background = "light" 
 
 vim.opt.swapfile = false
 
