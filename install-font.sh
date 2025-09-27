@@ -10,7 +10,7 @@ wget -O "$TEMP_DIR/font.zip" "https://github.com/ryanoasis/nerd-fonts/releases/d
 unzip "$TEMP_DIR/font.zip" -d "$TEMP_DIR"
 
 # Move the font files to the system fonts directory
-sudo mv "$TEMP_DIR"/*.{ttf,otf} /usr/local/share/fonts/
+sudo mv "$TEMP_DIR"/*.{ttf,otf} /usr/share/fonts/
 
 # Update the font cache
 fc-cache -f -v
