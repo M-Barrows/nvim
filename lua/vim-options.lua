@@ -6,7 +6,22 @@ vim.g.background = "light"
 
 vim.opt.swapfile = false
 
-vim.wo.relativenumber = true
+vim.o.relativenumber = true
+vim.o.mouse = 'a'
+
+vim.o.showmode = false
+
+vim.o.ignorecase = true
+vim.o.smartcase = true
+
+vim.o.updatetime = 250
+
+vim.o.splitright = true
+vim.o.splitbelow = true
+
+vim.o.inccommand = 'split'
+
+vim.o.cursorline = true
 
 vim.g.clipboard = {
   name = 'WslClipboard',
