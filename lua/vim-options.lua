@@ -23,6 +23,8 @@ vim.o.inccommand = 'split'
 
 vim.o.cursorline = true
 
+vim.o.mousescroll = 'ver:1,hor:2'
+
 vim.g.clipboard = {
   name = 'WslClipboard',
   copy = {
