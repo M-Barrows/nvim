@@ -24,19 +24,22 @@ vim.o.inccommand = 'split'
 vim.o.cursorline = true
 
 vim.o.mousescroll = 'ver:1,hor:2'
+-- Linux Clipboard Settings
+vim.opt.clipboard="unnamed,unnamedplus"
 
-vim.g.clipboard = {
-  name = 'WslClipboard',
-  copy = {
-      ['+'] = 'clip.exe',
-      ['*'] = 'clip.exe',
-  },
-  paste = {
-      ['+'] = 'powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
-      ['*'] = 'powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
-   },
-   cache_enabled = 0,
- }
+-- WSL Clibboard Settings 
+-- vim.g.clipboard = {
+--   name = 'WslClipboard',
+--   copy = {
+--       ['+'] = 'clip.exe',
+--       ['*'] = 'clip.exe',
+--   },
+--   paste = {
+--       ['+'] = 'powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+--       ['*'] = 'powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+--    },
+--    cache_enabled = 0,
+--  }
 
 vim.api.nvim_create_autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
