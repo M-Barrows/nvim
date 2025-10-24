@@ -2,7 +2,8 @@ vim.opt.expandtab = true
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 1
 vim.opt.shiftwidth = 2
-vim.g.background = "light" 
+
+vim.g.background = "light"
 
 vim.opt.swapfile = false
 
@@ -24,8 +25,9 @@ vim.o.inccommand = 'split'
 vim.o.cursorline = true
 
 vim.o.mousescroll = 'ver:1,hor:2'
+
 -- Linux Clipboard Settings
-vim.opt.clipboard="unnamed,unnamedplus"
+vim.opt.clipboard = 'unnamedplus'
 
 -- WSL Clibboard Settings 
 -- vim.g.clipboard = {
