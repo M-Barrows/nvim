@@ -6,10 +6,10 @@ While I try to make this config as plug and play as possible, I will list any ma
 
 1. [Install Neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md#pre-built-archives-2)
 
-1. Install tools with Mason:
+2. Install tools with Mason:
     `:Mason <Enter> 2 <C-f> Python` -> install `pyright` 
     `5` -> install `ruff` 
     `<C-f> Lua` -> install `stylua`
 
-2. Install pyright with NPM: 
+3. Install pyright with NPM: 
     In a normal terminal: `npm install -g pyright`

@@ -3,6 +3,8 @@ vim.opt.tabstop = 2
 vim.opt.softtabstop = 1
 vim.opt.shiftwidth = 2
 
+vim.opt.wrap = false
+
 vim.g.background = "light"
 
 vim.opt.swapfile = false
